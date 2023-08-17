@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 5rem 1rem;
+  width: 100%;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#imageInput {
+  max-width: 50%;
+  height: 5rem;
+  color: white;
+  background-color: transparent;
+  font-size: 1.8rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+button {
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  border-radius: 5px;
+  transition: all 100ms ease-in;
+}
+
+button:active {
+  color: red;
+  transform: scale(0.95);
+}
+
+#processedImage {
+  max-width: 55vw;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+@media (width < 600px) {
+  .container {
+    gap: 5rem;
+  }
+  .inputContainer {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  #imageInput {
+    max-width: 80vw;
+    height: 6rem;
+    padding: 1.5rem;
+  }
+  button {
+    width: 15rem;
+    height: 6rem;
+  }
+  img {
+    max-width: 80vw;
+    height: auto;
+  }
+}
