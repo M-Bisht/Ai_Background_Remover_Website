@@ -1,5 +1,5 @@
 const apiKey =
-  "bcd6862ca98aa1a0ac7eb562a60356db32c9ec16f36f4beede75e2b8df26142b070bc2cbd9ca88d694e51a1e72c35989";
+  "63449185b4539b55b88df054eb16718bd3c95fd112b0b34e051c66e698ff98e5e29c023a5482c350da77a2aa9210c52d";
 const imageInput = document.getElementById("imageInput");
 const uploadButton = document.getElementById("uploadButton");
 const processedImage = document.getElementById("processedImage");
